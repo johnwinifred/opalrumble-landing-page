@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 50% }
+  }
+  
+ 
+  .typewriter {
+    animation: typing 3.5s steps(10, end), ;
+  }
