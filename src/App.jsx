@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import './App.css'
 import Home from "./pages/home";
 import ErrorPage from "./pages/errorpage";
+import Gallery from "./pages/gallery";
 
 
 function App() {
@@ -10,7 +11,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Home />} />
         
-        <Route path="/Gallery" element="" />
+        <Route path="/Gallery" element={<Gallery />}/>
         <Route exact path="*" element={<ErrorPage />} />
 
       </Routes>
